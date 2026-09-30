@@ -1,0 +1,395 @@
+/* =========================================================
+   CANDIDATE APPLICATIONS PAGE
+========================================================= */
+
+.applications-page {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.applications-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 25px;
+    margin-bottom: 32px;
+}
+
+.applications-header h1 {
+    font-size: 32px;
+    color: #111827;
+    letter-spacing: -0.7px;
+    margin: 0 0 9px;
+    font-weight: 800;
+}
+
+.applications-header p:last-child {
+    color: #64748b;
+    font-size: 14px;
+    margin: 0;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   APPLICATION COUNT
+========================================================= */
+
+.application-count {
+    min-width: 125px;
+    padding: 14px 20px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 5px 18px rgba(15, 23, 42, 0.035);
+}
+
+.application-count span {
+    display: block;
+    color: #4f46e5;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.application-count small {
+    display: block;
+    color: #64748b;
+    font-size: 11px;
+    font-weight: 600;
+    margin-top: 4px;
+}
+
+
+/* =========================================================
+   APPLICATION LIST
+========================================================= */
+
+.applications-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+/* =========================================================
+   APPLICATION CARD
+========================================================= */
+
+.application-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+    padding: 23px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    box-shadow: 0 5px 20px rgba(15, 23, 42, 0.035);
+    transition:
+        transform 0.22s ease,
+        box-shadow 0.22s ease,
+        border-color 0.22s ease;
+}
+
+.application-card:hover {
+    transform: translateY(-3px);
+    border-color: #dbe3ff;
+    box-shadow: 0 14px 32px rgba(79, 70, 229, 0.07);
+}
+
+
+/* =========================================================
+   COMPANY LOGO
+========================================================= */
+
+.application-company-logo {
+    width: 54px;
+    height: 54px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: linear-gradient(
+        135deg,
+        #eef2ff,
+        #e0e7ff
+    );
+    color: #4f46e5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 800;
+    border: 1px solid #e0e7ff;
+}
+
+
+/* =========================================================
+   MAIN INFORMATION
+========================================================= */
+
+.application-main {
+    flex: 1;
+    min-width: 0;
+}
+
+.application-main h2 {
+    color: #111827;
+    font-size: 18px;
+    line-height: 1.4;
+    margin: 0 0 6px;
+    font-weight: 750;
+    letter-spacing: -0.2px;
+}
+
+.application-company {
+    color: #4f46e5;
+    font-size: 13px;
+    font-weight: 700;
+    margin: 0 0 13px;
+}
+
+
+/* =========================================================
+   APPLICATION META
+========================================================= */
+
+.application-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px 17px;
+    color: #64748b;
+    font-size: 12px;
+}
+
+.application-meta span {
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   STATUS SECTION
+========================================================= */
+
+.application-status-section {
+    min-width: 150px;
+    text-align: right;
+}
+
+.application-status {
+    display: inline-block;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 750;
+    text-transform: capitalize;
+    border: 1px solid transparent;
+}
+
+
+/* =========================================================
+   STATUS COLORS
+========================================================= */
+
+.application-status.applied {
+    background: #eff6ff;
+    color: #2563eb;
+    border-color: #dbeafe;
+}
+
+.application-status.under_review {
+    background: #fff7ed;
+    color: #ea580c;
+    border-color: #fed7aa;
+}
+
+.application-status.shortlisted {
+    background: #f5f3ff;
+    color: #7c3aed;
+    border-color: #ede9fe;
+}
+
+.application-status.interview {
+    background: #ecfeff;
+    color: #0891b2;
+    border-color: #cffafe;
+}
+
+.application-status.selected {
+    background: #ecfdf5;
+    color: #059669;
+    border-color: #d1fae5;
+}
+
+.application-status.rejected {
+    background: #fef2f2;
+    color: #dc2626;
+    border-color: #fee2e2;
+}
+
+.application-status.withdrawn {
+    background: #f1f5f9;
+    color: #64748b;
+    border-color: #e2e8f0;
+}
+
+
+/* =========================================================
+   APPLICATION ID
+========================================================= */
+
+.application-status-section p {
+    margin: 8px 0 0;
+    color: #94a3b8;
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   LOADING / ERROR
+========================================================= */
+
+.applications-message {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 40px;
+    text-align: center;
+    color: #64748b;
+    font-size: 14px;
+    box-shadow: 0 5px 20px rgba(15, 23, 42, 0.03);
+}
+
+.applications-message.error {
+    color: #dc2626;
+}
+
+
+/* =========================================================
+   EMPTY STATE
+========================================================= */
+
+.applications-empty {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+    padding: 75px 30px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(15, 23, 42, 0.03);
+}
+
+.applications-empty-icon {
+    width: 58px;
+    height: 58px;
+    margin: 0 auto 18px;
+    border-radius: 16px;
+    background: #eef2ff;
+    color: #4f46e5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.applications-empty h2 {
+    color: #111827;
+    font-size: 20px;
+    margin: 0 0 8px;
+    font-weight: 750;
+}
+
+.applications-empty p {
+    color: #64748b;
+    font-size: 13px;
+    max-width: 420px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .application-card {
+        align-items: flex-start;
+    }
+
+    .application-status-section {
+        min-width: 125px;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .applications-header {
+        align-items: flex-start;
+    }
+
+    .application-card {
+        flex-wrap: wrap;
+    }
+
+    .application-main {
+        width: calc(100% - 72px);
+    }
+
+    .application-status-section {
+        width: 100%;
+        text-align: left;
+        padding-left: 72px;
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .applications-header {
+        flex-direction: column;
+    }
+
+    .application-count {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .applications-header h1 {
+        font-size: 27px;
+    }
+
+    .application-card {
+        padding: 19px;
+    }
+
+    .application-meta {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .application-status-section {
+        padding-left: 0;
+    }
+
+}
+
+
+@media (max-width: 400px) {
+
+    .application-main h2 {
+        font-size: 16px;
+    }
+
+    .application-company {
+        font-size: 12px;
+    }
+
+}

@@ -1,0 +1,557 @@
+/* =========================================
+   RECRUITER DASHBOARD
+========================================= */
+
+.recruiter-dashboard {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 42px 50px 70px;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.recruiter-dashboard-header {
+    margin-bottom: 32px;
+}
+
+.recruiter-dashboard-header .dashboard-label {
+    margin-bottom: 8px;
+    color: #4f46e5;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.recruiter-dashboard-header h1 {
+    margin: 0;
+    color: #111827;
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 800;
+    letter-spacing: -0.7px;
+}
+
+.recruiter-dashboard-header p:last-child {
+    margin-top: 10px;
+    color: #64748b;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.dashboard-label {
+    color: #4f46e5;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+
+/* =========================================
+   STATISTICS
+========================================= */
+
+.recruiter-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+    margin-bottom: 24px;
+}
+
+.recruiter-stat-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    min-height: 92px;
+    padding: 20px;
+
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 17px;
+
+    box-shadow: 0 5px 18px rgba(15, 23, 42, 0.035);
+
+    transition:
+        transform 0.22s ease,
+        box-shadow 0.22s ease,
+        border-color 0.22s ease;
+}
+
+.recruiter-stat-card:hover {
+    transform: translateY(-2px);
+    border-color: #d9ddff;
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.07);
+}
+
+.stat-icon {
+    width: 46px;
+    height: 46px;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(
+        135deg,
+        #eef2ff,
+        #e0e7ff
+    );
+
+    color: #4f46e5;
+    border-radius: 13px;
+
+    font-size: 19px;
+    font-weight: 800;
+}
+
+.recruiter-stat-card span {
+    display: block;
+    margin-bottom: 5px;
+    color: #64748b;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.recruiter-stat-card strong {
+    display: block;
+    color: #111827;
+    font-size: 27px;
+    line-height: 1;
+    font-weight: 800;
+}
+
+
+/* =========================================
+   MAIN DASHBOARD GRID
+========================================= */
+
+.recruiter-dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+
+/* =========================================
+   PANELS
+========================================= */
+
+.recruiter-panel {
+    overflow: hidden;
+
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 19px;
+
+    box-shadow: 0 5px 20px rgba(15, 23, 42, 0.03);
+}
+
+.recruiter-panel-header {
+    padding: 23px 24px;
+    border-bottom: 1px solid #eef2f7;
+}
+
+.recruiter-panel-header h2 {
+    margin: 0 0 5px;
+    color: #111827;
+    font-size: 17px;
+    font-weight: 800;
+}
+
+.recruiter-panel-header p {
+    margin: 0;
+    color: #94a3b8;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   LISTS
+========================================= */
+
+.recruiter-list,
+.recruiter-jobs-list {
+    padding: 6px 23px;
+}
+
+
+/* =========================================
+   APPLICATION / JOB ROW
+========================================= */
+
+.recruiter-application,
+.recruiter-job {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+
+    padding: 17px 0;
+
+    border-bottom: 1px solid #f1f5f9;
+
+    transition: background 0.2s ease;
+}
+
+.recruiter-application:last-child,
+.recruiter-job:last-child {
+    border-bottom: none;
+}
+
+.recruiter-application:hover,
+.recruiter-job:hover {
+    background: #fafbff;
+}
+
+
+/* =========================================
+   AVATARS / JOB ICONS
+========================================= */
+
+.application-avatar,
+.job-mini-icon {
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(
+        135deg,
+        #eef2ff,
+        #e0e7ff
+    );
+
+    color: #4f46e5;
+    border-radius: 12px;
+
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.job-mini-icon {
+    font-size: 15px;
+}
+
+
+/* =========================================
+   APPLICATION / JOB DETAILS
+========================================= */
+
+.application-details,
+.job-mini-details {
+    flex: 1;
+    min-width: 0;
+}
+
+.application-details h3,
+.job-mini-details h3 {
+    margin: 0 0 5px;
+
+    color: #1f2937;
+
+    font-size: 13px;
+    font-weight: 750;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.application-details p,
+.job-mini-details p {
+    margin: 0;
+
+    color: #94a3b8;
+
+    font-size: 11px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/* =========================================
+   APPLICATION STATUS
+========================================= */
+
+.recruiter-status,
+.job-status {
+    flex-shrink: 0;
+
+    padding: 6px 10px;
+
+    border-radius: 999px;
+
+    font-size: 10px;
+    font-weight: 750;
+
+    white-space: nowrap;
+}
+
+
+/* Application statuses */
+
+.recruiter-status.applied {
+    background: #eff6ff;
+    color: #2563eb;
+}
+
+.recruiter-status.under_review {
+    background: #fff7ed;
+    color: #c2410c;
+}
+
+.recruiter-status.shortlisted {
+    background: #f5f3ff;
+    color: #7c3aed;
+}
+
+.recruiter-status.interview {
+    background: #ecfeff;
+    color: #0891b2;
+}
+
+.recruiter-status.selected {
+    background: #ecfdf5;
+    color: #059669;
+}
+
+.recruiter-status.rejected {
+    background: #fef2f2;
+    color: #dc2626;
+}
+
+
+/* =========================================
+   JOB STATUS
+========================================= */
+
+.job-status.published {
+    background: #ecfdf5;
+    color: #059669;
+}
+
+.job-status.closed {
+    background: #fef2f2;
+    color: #dc2626;
+}
+
+.job-status.draft {
+    background: #f8fafc;
+    color: #64748b;
+}
+
+
+/* =========================================
+   EMPTY STATE
+========================================= */
+
+.recruiter-empty {
+    padding: 55px 25px;
+
+    text-align: center;
+}
+
+.recruiter-empty > div {
+    width: 52px;
+    height: 52px;
+
+    margin: 0 auto 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f8fafc;
+    color: #cbd5e1;
+
+    border-radius: 14px;
+
+    font-size: 22px;
+}
+
+.recruiter-empty h3 {
+    margin: 0 0 7px;
+
+    color: #334155;
+
+    font-size: 14px;
+    font-weight: 750;
+}
+
+.recruiter-empty p {
+    max-width: 280px;
+    margin: 0 auto;
+
+    color: #94a3b8;
+
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   LOADING
+========================================= */
+
+.recruiter-loading {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f8fafc;
+
+    color: #64748b;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   ERROR
+========================================= */
+
+.recruiter-dashboard-message {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px;
+
+    background: #f8fafc;
+
+    color: #64748b;
+    font-size: 14px;
+}
+
+.recruiter-dashboard-message.error {
+    color: #dc2626;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1050px) {
+
+    .recruiter-dashboard {
+        padding: 38px 32px 60px;
+    }
+
+    .recruiter-stats-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .recruiter-dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+    .recruiter-dashboard {
+        padding: 28px 18px 50px;
+    }
+
+    .recruiter-dashboard-header {
+        margin-bottom: 25px;
+    }
+
+    .recruiter-dashboard-header h1 {
+        font-size: 28px;
+    }
+
+    .recruiter-dashboard-header p:last-child {
+        font-size: 14px;
+    }
+
+    .recruiter-stats-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .recruiter-stat-card {
+        min-height: 78px;
+        padding: 17px;
+    }
+
+    .stat-icon {
+        width: 42px;
+        height: 42px;
+    }
+
+    .recruiter-stat-card strong {
+        font-size: 24px;
+    }
+
+    .recruiter-panel {
+        border-radius: 16px;
+    }
+
+    .recruiter-panel-header {
+        padding: 20px;
+    }
+
+    .recruiter-list,
+    .recruiter-jobs-list {
+        padding: 5px 18px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 450px) {
+
+    .recruiter-dashboard {
+        padding: 24px 14px 40px;
+    }
+
+    .recruiter-dashboard-header h1 {
+        font-size: 25px;
+    }
+
+    .recruiter-dashboard-grid {
+        gap: 16px;
+    }
+
+    .recruiter-application,
+    .recruiter-job {
+        gap: 10px;
+    }
+
+    .application-avatar,
+    .job-mini-icon {
+        width: 38px;
+        height: 38px;
+    }
+
+    .recruiter-status,
+    .job-status {
+        padding: 5px 8px;
+        font-size: 9px;
+    }
+
+}
