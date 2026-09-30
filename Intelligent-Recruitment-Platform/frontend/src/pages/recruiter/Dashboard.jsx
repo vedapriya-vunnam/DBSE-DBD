@@ -23,7 +23,7 @@ function RecruiterDashboard() {
       }
 
       const response = await axios.get(
-        "http://localhost:5000/api/dashboard/recruiter",
+        "http:///api/dashboard/recruiter",
         {
           headers: {
             Authorization: `Bearer ${token}`

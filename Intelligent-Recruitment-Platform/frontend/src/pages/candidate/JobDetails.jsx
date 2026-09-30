@@ -20,7 +20,7 @@ function JobDetails() {
   const fetchJob = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/api/jobs/${id}`
+        `http:///api/jobs/${id}`
       );
 
       setJob(response.data.job);
@@ -41,7 +41,7 @@ function JobDetails() {
       const token = localStorage.getItem("token");
 
       const response = await axios.post(
-        "http://localhost:5000/api/applications",
+        "http:///api/applications",
         {
           job_id: Number(id)
         },
@@ -77,7 +77,7 @@ function JobDetails() {
       }
 
       const response = await axios.post(
-        "http://localhost:5000/api/saved-jobs",
+        "http:///api/saved-jobs",
         {
           job_id: Number(id)
         },

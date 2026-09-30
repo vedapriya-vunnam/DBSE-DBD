@@ -23,7 +23,7 @@ function Notifications() {
       }
 
       const response = await axios.get(
-        "http://localhost:5000/api/notifications",
+        "http:///api/notifications",
         {
           headers: {
             Authorization: `Bearer ${token}`
@@ -63,7 +63,7 @@ function Notifications() {
       const token = localStorage.getItem("token");
 
       await axios.put(
-        `http://localhost:5000/api/notifications/${notificationId}/read`,
+        `http:///api/notifications/${notificationId}/read`,
         {},
         {
           headers: {
@@ -93,7 +93,7 @@ function Notifications() {
       const token = localStorage.getItem("token");
 
       await axios.put(
-        "http://localhost:5000/api/notifications/read-all",
+        "http:///api/notifications/read-all",
         {},
         {
           headers: {

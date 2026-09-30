@@ -26,7 +26,7 @@ function Interviews() {
       }
 
       const response = await axios.get(
-        "http://localhost:5000/api/interviews/candidate",
+        "http:///api/interviews/candidate",
         {
           headers: {
             Authorization: `Bearer ${token}`

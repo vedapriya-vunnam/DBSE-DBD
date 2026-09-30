@@ -26,7 +26,7 @@ function MyJobs() {
             }
 
             const response = await axios.get(
-                "http://localhost:5000/api/jobs/recruiter/my-jobs",
+                "http:///api/jobs/recruiter/my-jobs",
                 {
                     headers: {
                         Authorization: `Bearer ${token}`

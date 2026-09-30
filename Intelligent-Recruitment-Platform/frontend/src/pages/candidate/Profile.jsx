@@ -39,7 +39,7 @@ function Profile() {
       }
 
       const response = await axios.get(
-        "http://localhost:5000/api/candidate/profile",
+        "http:///api/candidate/profile",
         {
           headers: {
             Authorization: `Bearer ${token}`
@@ -105,7 +105,7 @@ function Profile() {
       const token = localStorage.getItem("token");
 
       const response = await axios.put(
-        "http://localhost:5000/api/candidate/profile",
+        "http:///api/candidate/profile",
         {
           full_name: profile.full_name,
           phone: profile.phone,
