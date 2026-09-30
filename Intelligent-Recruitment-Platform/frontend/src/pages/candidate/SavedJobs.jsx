@@ -26,7 +26,7 @@ function SavedJobs() {
       }
 
       const response = await axios.get(
-        "http:///api/saved-jobs",
+        "/api/saved-jobs",
         {
           headers: {
             Authorization: `Bearer ${token}`
@@ -66,7 +66,7 @@ function SavedJobs() {
       const token = localStorage.getItem("token");
 
       await axios.delete(
-        `http:///api/saved-jobs/${jobId}`,
+        `/api/saved-jobs/${jobId}`,
         {
           headers: {
             Authorization: `Bearer ${token}`

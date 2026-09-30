@@ -37,7 +37,7 @@ function EditJob() {
       const token = localStorage.getItem("token");
 
       const response = await axios.get(
-        `http:///api/jobs/${id}`,
+        `/api/jobs/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`
@@ -101,7 +101,7 @@ function EditJob() {
       const token = localStorage.getItem("token");
 
       const response = await axios.put(
-        `http:///api/jobs/${id}`,
+        `/api/jobs/${id}`,
         {
           title: form.title,
           description: form.description,

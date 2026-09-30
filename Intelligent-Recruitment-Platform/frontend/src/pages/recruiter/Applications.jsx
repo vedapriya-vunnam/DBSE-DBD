@@ -47,7 +47,7 @@ function Applications() {
             }
 
             const response = await axios.get(
-                "http:///api/applications/recruiter/applications",
+                "/api/applications/recruiter/applications",
                 {
                     headers: {
                         Authorization: `Bearer ${token}`
@@ -117,7 +117,7 @@ function Applications() {
             const token = localStorage.getItem("token");
 
             await axios.put(
-                `http:///api/applications/${selectedApplication.application_id}/status`,
+                `/api/applications/${selectedApplication.application_id}/status`,
                 {
                     status: newStatus
                 },
@@ -206,7 +206,7 @@ function Applications() {
             const token = localStorage.getItem("token");
 
             await axios.post(
-                "http:///api/interviews",
+                "/api/interviews",
                 {
                     application_id:
                         selectedInterviewApplication.application_id,

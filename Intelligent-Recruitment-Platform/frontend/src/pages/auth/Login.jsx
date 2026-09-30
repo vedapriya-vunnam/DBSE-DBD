@@ -29,7 +29,7 @@ function Login() {
 
     try {
       const response = await axios.post(
-        "http:///api/auth/login",
+        "/api/auth/login",
         formData
       );
 

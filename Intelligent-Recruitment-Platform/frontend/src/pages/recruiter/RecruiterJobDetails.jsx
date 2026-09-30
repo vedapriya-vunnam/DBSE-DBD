@@ -19,7 +19,7 @@ function RecruiterJobDetails() {
   const fetchJob = async () => {
     try {
       const response = await axios.get(
-        `http:///api/jobs/${id}`
+        `/api/jobs/${id}`
       );
 
       console.log("RECRUITER JOB DETAILS:", response.data);

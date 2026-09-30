@@ -18,7 +18,7 @@ function Jobs() {
   const fetchJobs = async () => {
     try {
       const response = await axios.get(
-        "http:///api/jobs/search"
+        "/api/jobs/search"
       );
 
       setJobs(response.data.jobs || []);

@@ -17,7 +17,7 @@ function Applications() {
       const token = localStorage.getItem("token");
 
       const response = await axios.get(
-        "http:///api/applications/candidate/my-applications",
+        "/api/applications/candidate/my-applications",
         {
           headers: {
             Authorization: `Bearer ${token}`

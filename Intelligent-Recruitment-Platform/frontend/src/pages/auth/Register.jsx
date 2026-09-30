@@ -32,7 +32,7 @@ function Register() {
 
     try {
       await axios.post(
-        "http:///api/auth/register",
+        "/api/auth/register",
         formData
       );
 

@@ -26,7 +26,7 @@ function Home() {
     const fetchFeaturedJobs = async () => {
         try {
             const response = await axios.get(
-                "http:///api/jobs/search"
+                "/api/jobs/search"
             );
 
             const jobs = response.data.jobs || [];
@@ -82,7 +82,7 @@ function Home() {
             }
 
             const response = await axios.get(
-                "http:///api/jobs/search",
+                "/api/jobs/search",
                 {
                     params
                 }

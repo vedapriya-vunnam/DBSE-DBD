@@ -28,7 +28,7 @@ function Matching() {
       }
 
       const response = await axios.get(
-        "http:///api/matching/jobs",
+        "/api/matching/jobs",
         {
           headers: {
             Authorization: `Bearer ${token}`

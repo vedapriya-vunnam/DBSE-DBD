@@ -23,7 +23,7 @@ function Interviews() {
             }
 
             const response = await axios.get(
-                "http:///api/interviews/recruiter",
+                "/api/interviews/recruiter",
                 {
                     headers: {
                         Authorization: `Bearer ${token}`
@@ -86,7 +86,7 @@ function Interviews() {
             const token = localStorage.getItem("token");
 
             await axios.put(
-                `http:///api/interviews/${id}/status`,
+                `/api/interviews/${id}/status`,
                 { status },
                 {
                     headers: {
