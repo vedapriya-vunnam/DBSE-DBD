@@ -40,6 +40,15 @@ echo "MySQL is ready."
 # ==========================================
 mysql -u root -e \
 "CREATE DATABASE IF NOT EXISTS intelligent_recruitment;"
+# Allow Node.js to connect using 127.0.0.1
+mysql -u root -e \
+"CREATE USER IF NOT EXISTS 'root'@'127.0.0.1' IDENTIFIED BY '';"
+
+mysql -u root -e \
+"GRANT ALL PRIVILEGES ON *.* TO 'root'@'127.0.0.1' WITH GRANT OPTION;"
+
+mysql -u root -e \
+"FLUSH PRIVILEGES;"
 
 # ==========================================
 # Check whether tables already exist
